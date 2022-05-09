@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="bootstrap.min.css">
+    </head>
+    <body>
+        <div class="navbar navbar-ligth bg-warning">
+            <div class="container-fluid">
+              <span class="navbar-brand mb-0 h1">Practica Java</span>
+            </div>
+        </div>
+        <div class="conteiner mt-3">        <!-- Contenedor para todo -->
+            <div class="row">               <!-- Fila madre-->
+                <div class="col-lg-3">      <!-- Primera columna de 3-->
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">FUNCIONES</h5>
+                          <p class="card-text">Deberán llevar a cabo una App Web que debería calcular Corriente, Tensión y Resistencia de un red domiciliaria, basados en la Ley de Ohm.</p>
+                          <p class="card-text"><small class="text-muted">Ley de Ohm: Resistencia - Intensidad - Tensión (respectivamente según imagen)</small></p>
+                        </div>
+                        <img src="https://dam-assets.fluke.com/s3fs-public/6004178-dmm-whatis-ohm-2-715x360.jpg">
+                    </div>
+                </div>
+
+
+                
+                <div class="col-lg-3">      <!-- Segunda columnas de 3 -->
+                    <div class="col-lg-12">  <!-- Creo la columa para la card -->
+                        <div class="card mt-3" >    <!-- Creo la card con un margen de 3 -->
+                            <div class="card-body"> <!-- Creacion de la card-body-->
+                                <div class="row">    <!-- Fila para separar en dos columnas mas -->
+                                    <div class="col-lg-6"> <!-- columna para meter los el primer input y label-->
+                                        <div>
+                                            <label class="form-label">Tension</label>
+                                            <input class="form-control" type="number">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6"> <!-- Segunda columna para mete el el otro input y label-->
+                                        <div>
+                                            <label class="form-label">Intensidad</label>
+                                            <input class="form-control" type="number">
+                                        </div>
+                                    </div>
+                                    <div class="d-grid gap-2 col-6 mx-auto mt-3">   <!-- Creacion de boton para hacer el calculo de las columnas anterios -->
+                                        <button class="btn btn-outline-danger" type="button">Calcular</button>
+                                    </div>
+                                    <div class="mt-3">
+                                        <span  style="font-size:150%">La resistencia es de: </span>
+                                    </div>
+                                    
+                                </div>                                                                 
+                            </div>
+                        </div>
+                    </div>                      
+                </div>
+
+
+
+
+                <div class="col-lg-3">   <!-- tercera columna de 3 -->
+                    <div class="col-lg-12">
+                        <div class="card mt-3" >
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div>
+                                            <label class="form-label">Tension</label>
+                                            <input class="form-control" type="number">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div>
+                                            <label class="form-label">Resistencia</label>
+                                            <input class="form-control" type="number">
+                                        </div>
+                                    </div>
+                                    <div class="d-grid gap-2 col-6 mx-auto mt-3">
+                                        <button class="btn btn-outline-danger" type="button">Calcular</button>
+                                    </div>
+                                    <div class="mt-3">
+                                        <span  style="font-size:150%">La Intensidad es de: </span>
+                                    </div>
+                                </div>                                                                 
+                            </div>
+                        </div>
+                    </div>                      
+                </div>
+                <div class="col-lg-3">
+                    <div class="col-lg-12">
+                        <div class="card mt-3" >
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div>
+                                            <label class="form-label">Intensidad</label>
+                                            <input class="form-control" type="number">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div>
+                                            <label class="form-label">Resistencia</label>
+                                            <input class="form-control" type="number">
+                                        </div>
+                                    </div>
+                                    <div class="d-grid gap-2 col-6 mx-auto mt-3">
+                                        <button class="btn btn-outline-danger" type="button">Calcular</button>
+                                    </div>
+                                    <div class="mt-3">
+                                        <span  style="font-size:150%">La Tension es de: </span>
+                                    </div>
+                                </div>                                                                 
+                            </div>
+                        </div>
+                    </div>                      
+                </div>
+            </div> 
+                     
+        </div>
+    </body>
+</html>
