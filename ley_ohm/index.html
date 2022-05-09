@@ -24,10 +24,7 @@
                         </div>
                         <img src="https://dam-assets.fluke.com/s3fs-public/6004178-dmm-whatis-ohm-2-715x360.jpg">
                     </div>
-                </div>
-
-
-                
+                </div>                
                 <div class="col-lg-3">      <!-- Segunda columnas de 3 -->
                     <div class="col-lg-12">  <!-- Creo la columa para la card -->
                         <div class="card mt-3" >    <!-- Creo la card con un margen de 3 -->
@@ -36,31 +33,27 @@
                                     <div class="col-lg-6"> <!-- columna para meter los el primer input y label-->
                                         <div>
                                             <label class="form-label">Tension</label>
-                                            <input class="form-control" type="number">
+                                            <input class="form-control" type="number" id="inp_n1" placeholder="ingresa un numero">
                                         </div>
                                     </div>
                                     <div class="col-lg-6"> <!-- Segunda columna para mete el el otro input y label-->
                                         <div>
                                             <label class="form-label">Intensidad</label>
-                                            <input class="form-control" type="number">
+                                            <input class="form-control" type="number"  id="inp_n2" placeholder="ingresa un numero">
                                         </div>
                                     </div>
                                     <div class="d-grid gap-2 col-6 mx-auto mt-3">   <!-- Creacion de boton para hacer el calculo de las columnas anterios -->
-                                        <button class="btn btn-outline-danger" type="button">Calcular</button>
+                                        <button onclick="recolectar_datos()" class="btn btn-outline-danger" type="button">Calcular</button>
                                     </div>
                                     <div class="mt-3">
-                                        <span  style="font-size:150%">La resistencia es de: </span>
+                                        <span  style="font-size:150%"  id="h_resultado" >La resistencia es de:</span>
                                     </div>
-                                    
+                                    <script src="main.js"></script>
                                 </div>                                                                 
                             </div>
                         </div>
                     </div>                      
                 </div>
-
-
-
-
                 <div class="col-lg-3">   <!-- tercera columna de 3 -->
                     <div class="col-lg-12">
                         <div class="card mt-3" >
@@ -69,27 +62,27 @@
                                     <div class="col-lg-6">
                                         <div>
                                             <label class="form-label">Tension</label>
-                                            <input class="form-control" type="number">
+                                            <input class="form-control" type="number" placeholder="ingresa un numero">
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div>
                                             <label class="form-label">Resistencia</label>
-                                            <input class="form-control" type="number">
+                                            <input class="form-control" placeholder="ingresa un numero">
                                         </div>
                                     </div>
                                     <div class="d-grid gap-2 col-6 mx-auto mt-3">
                                         <button class="btn btn-outline-danger" type="button">Calcular</button>
                                     </div>
                                     <div class="mt-3">
-                                        <span  style="font-size:150%">La Intensidad es de: </span>
+                                        <span  style="font-size:150%" >La Intensidad es de: </span>
                                     </div>
                                 </div>                                                                 
                             </div>
                         </div>
                     </div>                      
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3">    <!-- Cuarta columna de 3-->
                     <div class="col-lg-12">
                         <div class="card mt-3" >
                             <div class="card-body">
@@ -97,28 +90,27 @@
                                     <div class="col-lg-6">
                                         <div>
                                             <label class="form-label">Intensidad</label>
-                                            <input class="form-control" type="number">
+                                            <input class="form-control" type="number" placeholder="ingresa un numero">
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div>
                                             <label class="form-label">Resistencia</label>
-                                            <input class="form-control" type="number">
+                                            <input class="form-control" type="number" placeholder="ingresa un numero">
                                         </div>
                                     </div>
                                     <div class="d-grid gap-2 col-6 mx-auto mt-3">
                                         <button class="btn btn-outline-danger" type="button">Calcular</button>
                                     </div>
                                     <div class="mt-3">
-                                        <span  style="font-size:150%">La Tension es de: </span>
+                                        <span  style="font-size:150%" >La Tension es de: </span>
                                     </div>
                                 </div>                                                                 
                             </div>
                         </div>
                     </div>                      
                 </div>
-            </div> 
-                     
+            </div>                     
         </div>
     </body>
 </html>
