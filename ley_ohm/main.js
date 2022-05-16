@@ -3,10 +3,11 @@ function dividir(a,b){
     return resultado
 }
 
-function recolectar_datos(){
+function recolectar_datos(operacion){
     const nro1 = document.getElementById("inp_n1").value
     const nro2 = document.getElementById("inp_n2").value
 
     const respuesta = dividir(nro1,nro2)
-    document.getElementById("h_resultado").innerHTML = "La resistencia es de: " + respuesta
+
+    document.getElementById("h_resultado").innerHTML = respuesta    
 }
