@@ -7,27 +7,27 @@
         <title>JavaScript "Funciones y eventos"</title>
         <link rel="stylesheet" href="bootstrap.min.css">
     </head>
-    <body>
-        <nav class="navbar navbar-light" style="background-color: #8c5eb8;">
-            <a class="navbar-brand"> Seleccion de autos</a>
+    <body style="background-color: rgb(236, 214, 212);">
+        <nav class="navbar navbar-light " style="background-color: #c5a9c5; ">
+            <a class="navbar-brand text-white"> Seleccion de autos</a>
           </nav>
-        <div class="conteiner">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="card h-100 mt-3">
-                        <img src="https://cdn.motor1.com/images/mgl/KNV4Q/s3/critica-ford-ka-freestyle.webp" class="card-img-top" alt="...">
+                    <div class="card h-100 mt-3 text-white" style="background-color: rgb(153, 137, 136);">
+                        <img src="https://cdn.motor1.com/images/mgl/KNV4Q/s3/critica-ford-ka-freestyle.webp" class="card-body" style="height: 300px;" alt="...">
                         <div class="card-body">
                           <h3 class= "card-title" class="display-6 ">Ford Ka</h3>
                           <p class="card-text"> Su precio es de: $2.900,00
                               y tiene un descuento del %5
                           </p>
                         </div>
-                    </div>
+                    </div>  
                     
                 </div>
                 <div class="col-lg-4">
-                    <div class="card h-100 mt-3">
-                        <img src="https://www.cochesyconcesionarios.com/uploads/ford/fiesta/7/ha/ford-fiesta-01-6e10847ef48438e7d5ed8238b8c2a446684ad0d5.jpeg" class="card-img-top" alt="...">
+                    <div class="card h-100 mt-3 text-white" style="background-color: rgb(153, 137, 136);">
+                        <img src="https://www.cochesyconcesionarios.com/uploads/ford/fiesta/7/ha/ford-fiesta-01-6e10847ef48438e7d5ed8238b8c2a446684ad0d5.jpeg" class="card-body" style="height: 300px;" alt="...">
                         <div class="card-body">
                           <h3 class= "card-title" class="display-6 ">Ford Fiesta</h3>
                           <p class="card-text"> Su precio es de: $3.350,00
@@ -37,8 +37,8 @@
                     </div>
                 </div>
                 <div class="col-lg-4">                    
-                    <div class="card h-100 mt-3">
-                        <img src="https://img.remediosdigitales.com/34c83c/ford-focus-2022_3a/1366_2000.jpeg" class="card-img-top" alt="...">
+                    <div class="card h-100 mt-3 text-white" style="background-color: rgb(153, 137, 136);">
+                        <img  src="https://img.remediosdigitales.com/34c83c/ford-focus-2022_3a/1366_2000.jpeg" class="card-body" style="height: 300px;" alt="Responsive image">
                         <div class="card-body">
                           <h3 class= "card-title" class="display-6 ">Ford Focus</h3>
                           <p class="card-text"> Su precio es de: $3.960,00
@@ -48,19 +48,19 @@
                     </div>
                 </div>
                 
-                <div class="col-lg-3 mt-3">
-                    <select style="background-color: #8c5eb8;" class="form-select form-select-lg mb-3 mt-3" aria-label=".form-select-lg example" onchange="seleccion()" id="slt_operacion">
-                        <option selected disabled value="-1">Seleccione operacion</option>
-                        <option value="0">Ford Ka</option>
-                        <option value="1">Ford Focus</option>
-                        <option value="2">Ford Fiesta</option>
+                <div class="col-lg-6 mt-3">
+                    <select style="background-color: rgb(153, 137, 136);" class="form-select form-select-lg mb-3 mt-3" aria-label=".form-select-lg example" id="slt_operacion">
+                        <option class="text-white" selected disabled value="-1">Seleccione operacion</option>
+                        <option class="text-white" value="0">Ford Ka</option>
+                        <option class="text-white" value="1">Ford Focus</option>
+                        <option class="text-white" value="2">Ford Fiesta</option>
                     </select>
                 </div>
                 <div class="col-lg-3 mt-3">
-                    <button onclick="seleccion()" class="btn btn-dark mt-3" type="button">Calcular</button>
+                    <button onclick="seleccion()" style="background-color: rgb(153, 137, 136);" class="btn btn-dark mt-3" type="button">Calcular</button>
                 </div>
                 <div class="col-lg-12">
-                    <h1 class="display-6 mt-3" style="color: blueviolet;" id="h_resultado"></h1>
+                    <h1 class="display-6 mt-3 text-dark"  id="h_resultado"></h1>
                 </div>
                 
             </div>  
