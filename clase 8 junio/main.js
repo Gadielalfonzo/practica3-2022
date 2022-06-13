@@ -8,7 +8,7 @@ async function consumir_datos(){
    datos_definitivos.forEach( (element,index) => {
         let fila = `
             <tr>
-                <td><img src="${element.image}" width="70px" class="img-fluid"></td>
+                <td><img src="${element.image}"  class="img-fluid" ></td>
                 <td>${element.name}</td>
                 <td>${element.symbol}</td>
                 <td>${element.current_price}</td>
